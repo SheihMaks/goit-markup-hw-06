@@ -455,6 +455,7 @@
           <div class="subscription-container">
             <input
               type="email"
+              name="subscription"
               class="mail-subscription"
               placeholder="E-mail"
             />
@@ -480,7 +481,13 @@
           <div>
             <label for="name" class="input-description">Имя</label>
             <span class="input-container">
-              <input type="text" id="name" class="modal-form-input" required />
+              <input
+                type="text"
+                name="user-name"
+                id="name"
+                class="modal-form-input"
+                required
+              />
               <svg class="icon-input-svg" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-icon-cnt"></use>
               </svg>
@@ -492,6 +499,7 @@
               <input
                 type="tel"
                 id="telephone"
+                name="user-tel"
                 class="modal-form-input"
                 required
               />
@@ -503,7 +511,13 @@
           <div>
             <label for="mail" class="input-description">Почта</label>
             <span class="input-container">
-              <input type="email" id="mail" class="modal-form-input" required />
+              <input
+                type="email"
+                id="mail"
+                name="user-mail"
+                class="modal-form-input"
+                required
+              />
               <svg class="icon-input-svg" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-icon-mail-modal"></use>
               </svg>
@@ -523,6 +537,7 @@
             <label for="policy" class="title-policy">
               <input
                 type="checkbox"
+                name="policy-check"
                 id="policy"
                 class="checkbox-input some-hidden"
               /><span class="custom-check"
