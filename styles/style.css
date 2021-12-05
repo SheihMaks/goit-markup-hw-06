@@ -1093,6 +1093,9 @@ color: rgba(117, 117, 117, 0.5);
 
 }
 
+.checkbox-input {
+cursor: pointer;
+}
 
 .checkbox-input:focus + .custom-check {
 border-width: 3px;
