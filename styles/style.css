@@ -1100,7 +1100,6 @@ border: solid 3px black;
 
 .checkbox-input:checked + .custom-check {
   background-color: var(--accent-color);
-  border-color: transparent;
 }
 
 .link-policy {
