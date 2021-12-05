@@ -61,6 +61,17 @@ body {
   text-decoration: none;
 }
 
+.some-hidden {  
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1036,7 +1047,7 @@ color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+ }
 
 .modal-textarea-input::placeholder {
 font-size: 14px;
@@ -1066,11 +1077,13 @@ color: rgba(117, 117, 117, 0.5);
   margin-right: 8.38px;
   background-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-input:focus + .title-policy .custom-check {
   border-color: var(--accent-color);
+  border: 3px;
 }
 
 .checkbox-input:checked + .title-policy .custom-check {
